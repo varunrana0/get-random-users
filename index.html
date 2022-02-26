@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Random Image Api</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .image_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      width: 300px;
+      max-width: 100%;
+      /* height: 400px;
+      max-height: 400px; */
+      gap: 20px;
+      padding: 0.7rem;
+      background-color: lightblue;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .random_image {
+      padding: 0.7rem 2rem;
+      border: 1px solid #333;
+      cursor: pointer;
+      background-color: transparent;
+      display: inline-block;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: inherit;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Fetch Random Users</h2>
+      <div class="image_box"></div>
+      <button class="random_image">Get Random User</button>
+    </div>
+  </body>
+  <script src="/app.js"></script>
+</html>
